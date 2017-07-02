@@ -1,0 +1,9 @@
+language: c
+
+before_install:
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install -qq avrdude avrdude-doc binutils-avr avr-libc gcc-avr gdb-avr
+
+script: make
