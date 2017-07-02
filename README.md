@@ -1,6 +1,8 @@
 # Control LED with Atmel Microcontroller
 [![Build Status](https://travis-ci.org/piLinux/avrLEDcontrol.svg?branch=master)](https://travis-ci.org/piLinux/avrLEDcontrol)
 
+[![Coverage Status](https://coveralls.io/repos/github/piLinux/avrLEDcontrol/badge.svg?branch=master)](https://coveralls.io/github/piLinux/avrLEDcontrol?branch=master)
+
 ### Accessories
 - myAVR MK2 board
 - hookup wires
