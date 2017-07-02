@@ -4,8 +4,7 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get install -qq avrdude avrdude-doc binutils-avr avr-libc gcc-avr gdb-avr ggcov
+  - sudo apt-get install -qq avrdude avrdude-doc binutils-avr avr-libc gcc-avr gdb-avr
 
 script:
   - make
-  - gcov init.c led.c main.c
