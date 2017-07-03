@@ -6,5 +6,6 @@ before_install:
 install:
   - sudo apt-get install -qq avrdude avrdude-doc binutils-avr avr-libc gcc-avr gdb-avr
 
-script:
-  - make
+env:
+  - TEST_DIR=avrLEDcontrol
+script: cd $TEST_DIR && make
