@@ -8,4 +8,5 @@ install:
 
 env:
   - TEST_DIR=avrLEDcontrol
+  - TEST_DIR=readAnalog-writeToLCD
 script: cd $TEST_DIR && make
