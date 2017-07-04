@@ -13,7 +13,7 @@
 - PC3 to potentiometer (Pot.1)
 - LCD module to MK2 board 
 
-![Image](readAnalog-writeToLCD/img1.jpg)
+![Image](img1.jpg)
 
 ### Output
 - When analog input is 0 – 1.66V, only Green LED is ON.
