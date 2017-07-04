@@ -21,7 +21,7 @@ program: main.hex
 
 # Hex File #####################################################################
 main.hex: main.elf
-  avr-objcopy -O ihex main.elf main.hex
+	avr-objcopy -O ihex main.elf main.hex
 
 main.elf: main.o lcd.o
 	avr-gcc $(LDFLAGS) main.o lcd.o -o main.elf
