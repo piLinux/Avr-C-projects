@@ -9,4 +9,5 @@ install:
 env:
   - TEST_DIR=avrLEDcontrol
   - TEST_DIR=readAnalog-writeToLCD
+  - TEST_DIR=timerCounter
 script: cd $TEST_DIR && make
