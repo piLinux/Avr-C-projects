@@ -14,10 +14,10 @@ LDFLAGS=-Os -mmcu=$(TARGET_CPU)
 
 # Program ######################################################################
 all: main.hex
-  echo program build complete
+	echo program build complete
 
 program: main.hex
-  avrdude -p $(TARGET_PROCESSOR) -c $(PROGRAMMER) -P $(PORT) -U flash:w:main.hex:i
+	avrdude -p $(TARGET_PROCESSOR) -c $(PROGRAMMER) -P $(PORT) -U flash:w:main.hex:i
 
 
 # Hex File #####################################################################
