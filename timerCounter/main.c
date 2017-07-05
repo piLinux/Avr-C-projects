@@ -5,7 +5,7 @@
 */
 
 // CPU clock for atmega8
-#define F_CPU 3686400UL
+#define F_CPU 8000000UL
 
 /******************************************************************************/
 /* INCLUDED FILES                                                             */
