@@ -7,7 +7,5 @@ install:
   - sudo apt-get install -qq avrdude avrdude-doc binutils-avr avr-libc gcc-avr gdb-avr
 
 env:
-  - TEST_DIR=avrLEDcontrol
-  - TEST_DIR=readAnalog-writeToLCD
-  - TEST_DIR=timerCounter
+  - TEST_DIR=interrupt
 script: cd $TEST_DIR && make
