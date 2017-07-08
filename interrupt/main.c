@@ -40,9 +40,8 @@ void init(void){
 	DDRB |= (1 << DDB1);	// PB0 output
 	
 	// Enable interrupts
-	//TODO for Task 2.2
-	EICRA |= (1 << INT0) | (1 << INT1);
-	EIMSK |= (1 << ISC00) | (1 << ISC10);
+	GICR |= (1 << INT0) | (1 << INT1);
+	MCUCR |= (1 << ISC00) | (1 << ISC10);
 			
 }
 
