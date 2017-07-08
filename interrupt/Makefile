@@ -13,25 +13,25 @@ LDFLAGS=-Os -mmcu=$(TARGET_CPU)
 
 # Program ######################################################################
 all: main.hex
-  echo program build complete
+	echo program build complete
 
 program: main.hex
-  avrdude -p $(TARGET_PROCESSOR) -c $(PROGRAMMER) -P $(PORT) -U flash:w:main.hex:i
+	avrdude -p $(TARGET_PROCESSOR) -c $(PROGRAMMER) -P $(PORT) -U flash:w:main.hex:i
 
 
 # Hex File #####################################################################
 main.hex: main.elf
-  avr-objcopy -O ihex main.elf main.hex
+	avr-objcopy -O ihex main.elf main.hex
 
 main.elf: main.o
-  avr-gcc $(LDFLAGS) main.o -o main.elf
+	avr-gcc $(LDFLAGS) main.o -o main.elf
 
 
 # Object Files #################################################################
 main.o: main.c
-  avr-gcc $(CFLAGS) main.c -o main.o
+	avr-gcc $(CFLAGS) main.c -o main.o
 
 
 # Clean ########################################################################
 clean:
-  rm -f *.o *.elf *.hex *~
+	rm -f *.o *.elf *.hex *~
